@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Timber'
+  s.name             = 'TimberSwift'
   s.version          = '0.1.0'
   s.summary          = 'A file-based logging framework written in Swift'
   s.description      = 'Timber is a file-based logging framework written in Swift'
