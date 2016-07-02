@@ -1,0 +1,6 @@
+framework module Timber {
+  umbrella header "Timber-umbrella.h"
+
+  export *
+  module * { export * }
+}

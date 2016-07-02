@@ -1,0 +1,7 @@
+coverage_service: cobertura_xml
+workspace: Example/Timber.xcworkspace
+xcodeproj: Example/Timber.xcodeproj
+scheme: Timber-Example
+source_directory: Timber/Classes
+ignore: 
+    - Example/*

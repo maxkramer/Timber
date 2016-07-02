@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50AA8E051D2864B7005A23D7 /* LogFormatter+AttributesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA8DFE1D2864B7005A23D7 /* LogFormatter+AttributesTests.swift */; };
+		50AA8E061D2864B7005A23D7 /* LogFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA8DFF1D2864B7005A23D7 /* LogFormatterTests.swift */; };
+		50AA8E071D2864B7005A23D7 /* LogFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA8E001D2864B7005A23D7 /* LogFormatTests.swift */; };
+		50AA8E081D2864B7005A23D7 /* Logger+SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA8E011D2864B7005A23D7 /* Logger+SingletonTests.swift */; };
+		50AA8E091D2864B7005A23D7 /* LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA8E021D2864B7005A23D7 /* LoggerTests.swift */; };
+		50AA8E0A1D2864B7005A23D7 /* LogLevelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA8E031D2864B7005A23D7 /* LogLevelTests.swift */; };
+		50AA8E0B1D2864B7005A23D7 /* String+FileExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AA8E041D2864B7005A23D7 /* String+FileExtensionsTests.swift */; };
 		512688EBC8D574D3B7D5F666 /* Pods_Timber_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A4D68C6E7D263BC682FC24 /* Pods_Timber_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D554FA24601A1E06D5E2C4F9 /* Pods_Timber_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92114DBDA6801A8AB52774D /* Pods_Timber_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +36,13 @@
 /* Begin PBXFileReference section */
 		19086410D8926DA81BDE574B /* Pods-Timber_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timber_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Timber_Tests/Pods-Timber_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A2C230BAFA9A6D059D9B7DD /* Pods-Timber_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timber_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Timber_Tests/Pods-Timber_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		50AA8DFE1D2864B7005A23D7 /* LogFormatter+AttributesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LogFormatter+AttributesTests.swift"; sourceTree = "<group>"; };
+		50AA8DFF1D2864B7005A23D7 /* LogFormatterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFormatterTests.swift; sourceTree = "<group>"; };
+		50AA8E001D2864B7005A23D7 /* LogFormatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFormatTests.swift; sourceTree = "<group>"; };
+		50AA8E011D2864B7005A23D7 /* Logger+SingletonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Logger+SingletonTests.swift"; sourceTree = "<group>"; };
+		50AA8E021D2864B7005A23D7 /* LoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
+		50AA8E031D2864B7005A23D7 /* LogLevelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevelTests.swift; sourceTree = "<group>"; };
+		50AA8E041D2864B7005A23D7 /* String+FileExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FileExtensionsTests.swift"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Timber_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timber_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,8 +52,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Timber_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Timber_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		62703F56D7B060A43C081969 /* Timber.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Timber.podspec; path = ../Timber.podspec; sourceTree = "<group>"; };
+		62703F56D7B060A43C081969 /* Timber.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Timber.podspec; path = ../Timber.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6FC95B8B73CC40470EF18354 /* Pods-Timber_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timber_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Timber_Example/Pods-Timber_Example.release.xcconfig"; sourceTree = "<group>"; };
 		741EB170E69CD219526540C0 /* Pods-Timber_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timber_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Timber_Example/Pods-Timber_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B2CB1382821979E90527B470 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -115,7 +127,13 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				50AA8DFE1D2864B7005A23D7 /* LogFormatter+AttributesTests.swift */,
+				50AA8DFF1D2864B7005A23D7 /* LogFormatterTests.swift */,
+				50AA8E001D2864B7005A23D7 /* LogFormatTests.swift */,
+				50AA8E011D2864B7005A23D7 /* Logger+SingletonTests.swift */,
+				50AA8E021D2864B7005A23D7 /* LoggerTests.swift */,
+				50AA8E031D2864B7005A23D7 /* LogLevelTests.swift */,
+				50AA8E041D2864B7005A23D7 /* String+FileExtensionsTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -209,7 +227,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -368,7 +386,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				50AA8E091D2864B7005A23D7 /* LoggerTests.swift in Sources */,
+				50AA8E051D2864B7005A23D7 /* LogFormatter+AttributesTests.swift in Sources */,
+				50AA8E061D2864B7005A23D7 /* LogFormatterTests.swift in Sources */,
+				50AA8E0B1D2864B7005A23D7 /* String+FileExtensionsTests.swift in Sources */,
+				50AA8E071D2864B7005A23D7 /* LogFormatTests.swift in Sources */,
+				50AA8E081D2864B7005A23D7 /* Logger+SingletonTests.swift in Sources */,
+				50AA8E0A1D2864B7005A23D7 /* LogLevelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19086410D8926DA81BDE574B /* Pods-Timber_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -526,6 +551,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timber_Example.app/Timber_Example";
 			};
 			name = Debug;
 		};
@@ -533,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A2C230BAFA9A6D059D9B7DD /* Pods-Timber_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,6 +569,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timber_Example.app/Timber_Example";
 			};
 			name = Release;
 		};

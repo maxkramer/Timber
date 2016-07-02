@@ -1,0 +1,16 @@
+PODS:
+  - Timber (0.1.0)
+
+DEPENDENCIES:
+  - Timber (from `../`)
+
+EXTERNAL SOURCES:
+  Timber:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Timber: 9ca6ac85458797124da8348b6ffad593258a56b9
+
+PODFILE CHECKSUM: a873acb5a40d6c4842764d9b661df01f985ec970
+
+COCOAPODS: 1.0.1
