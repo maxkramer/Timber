@@ -4,9 +4,9 @@ File-based logging framework written in Swift
 [![Build Status](https://travis-ci.org/MaxKramer/Timber.svg?branch=master)](https://travis-ci.org/MaxKramer/Timber)
 [![codecov](https://codecov.io/gh/MaxKramer/Timber/branch/master/graph/badge.svg)](https://codecov.io/gh/MaxKramer/Timber)
 
-[![Version](https://img.shields.io/cocoapods/v/Timber.svg?style=flat)](http://cocoapods.org/pods/Timber)
-[![License](https://img.shields.io/cocoapods/l/Timber.svg?style=flat)](http://cocoapods.org/pods/Timber)
-[![Platform](https://img.shields.io/cocoapods/p/Timber.svg?style=flat)](http://cocoapods.org/pods/Timber)
+[![Version](https://img.shields.io/cocoapods/v/TimberSwift.svg?style=flat)](http://cocoapods.org/pods/TimberSwift)
+[![License](https://img.shields.io/cocoapods/l/TimberSwift.svg?style=flat)](http://cocoapods.org/pods/TimberSwift)
+[![Platform](https://img.shields.io/cocoapods/p/TimberSwift.svg?style=flat)](http://cocoapods.org/pods/TimberSwift)
 
 ## Usage
 
