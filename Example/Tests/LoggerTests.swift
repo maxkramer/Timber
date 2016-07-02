@@ -62,7 +62,7 @@ class LoggerTests: XCTestCase {
             return false
         })
         
-        localLogger.enabled = true
+        localLogger.enabled = false
         
         // Log some data
         localLogger.debug("This should not be logged")
