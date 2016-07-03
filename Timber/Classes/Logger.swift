@@ -28,6 +28,9 @@ public class Logger {
     /// See the class for more info.
     public var logFormat: LogFormat
     
+    /// More useful for testing purposes; will perform the log to a pipe or console on the current thread
+    public var useCurrentThread: Bool = false
+    
     /// Sets the pipe used for output. Default (nil) refers to the console
     public var pipe: NSPipe?
     
@@ -106,7 +109,7 @@ public class Logger {
             return
         }
         
-        dispatch_async(logQueue) {
+        let formatBlock = {
             let logFormatter = LogFormatter(format: self.logFormat, logLevel: level, filePath: filePath, line: line, column: column, function: function, message: message.reduce("", combine: { (combinator, obj) in
                 if combinator.characters.count == 0 {
                     return String(obj)
@@ -123,6 +126,13 @@ public class Logger {
                 // The separator and terminator are automatically set with the log formatter
                 print(logMessage, separator: "", terminator: "")
             }
+        }
+        
+        if useCurrentThread {
+            formatBlock()
+        }
+        else {
+            dispatch_async(logQueue, formatBlock)
         }
     }
     

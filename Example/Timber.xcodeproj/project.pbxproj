@@ -43,6 +43,7 @@
 		50AA8E021D2864B7005A23D7 /* LoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerTests.swift; sourceTree = "<group>"; };
 		50AA8E031D2864B7005A23D7 /* LogLevelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevelTests.swift; sourceTree = "<group>"; };
 		50AA8E041D2864B7005A23D7 /* String+FileExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FileExtensionsTests.swift"; sourceTree = "<group>"; };
+		50CE3DFE1D295704003C14C8 /* TimberSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = TimberSwift.podspec; path = ../TimberSwift.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Timber_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timber_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Timber_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Timber_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62703F56D7B060A43C081969 /* Timber.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Timber.podspec; path = ../Timber.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6FC95B8B73CC40470EF18354 /* Pods-Timber_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timber_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Timber_Example/Pods-Timber_Example.release.xcconfig"; sourceTree = "<group>"; };
 		741EB170E69CD219526540C0 /* Pods-Timber_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timber_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Timber_Example/Pods-Timber_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B2CB1382821979E90527B470 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				62703F56D7B060A43C081969 /* Timber.podspec */,
+				50CE3DFE1D295704003C14C8 /* TimberSwift.podspec */,
 				B2CB1382821979E90527B470 /* README.md */,
 				E199E4908A0A4FA190C934A3 /* LICENSE */,
 			);

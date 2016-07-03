@@ -40,64 +40,44 @@ class LoggerTests: XCTestCase {
         XCTAssertEqual(logger2.minLevel, Logger.LogLevel.Debug)
     }
     
-    func fulfillAfter(expectation: XCTestExpectation, time: Int = 4) {
-        dispatch_after(UInt64(time) * NSEC_PER_SEC, dispatch_get_main_queue()) {
+    func fulfillAfter(expectation: XCTestExpectation, time: Double = 4) {
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
             expectation.fulfill()
         }
     }
     
     func testDisabledLoggerDoesntLog() {
+        let logger = Logger()
         let pipe = NSPipe()
-        let localLogger = Logger()
         
-        localLogger.pipe = pipe
-        pipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        logger.pipe = pipe
+        logger.enabled = false
+        logger.useCurrentThread = true
         
-        // Setup the expectation to wait for the notification
+        let writtenData = "written data".dataUsingEncoding(NSUTF8StringEncoding)!
+        logger.pipe!.fileHandleForWriting.writeData(writtenData)
         
-        let expectation = expectationForNotification(NSFileHandleDataAvailableNotification, object: pipe.fileHandleForReading, handler: { notif -> Bool in
-            // A notification should not be received
-            // Throw an assertion if the notification is received
-            XCTAssertTrue(true == false)
-            return false
-        })
+        logger.debug("Test message")
         
-        localLogger.enabled = false
-        
-        // Log some data
-        localLogger.debug("This should not be logged")
-        
-        // Gives 4 seconds for a notification to be received and for the test to fail, and otherwises fulfils it, acknowledging that a notification was not received
-        fulfillAfter(expectation)
-        
-        waitForExpectationsWithTimeout(5, handler: nil)
+        XCTAssertEqual(logger.pipe!.fileHandleForReading.availableData.length, writtenData.length)
     }
     
     func testSettingFileLogLevelDoesntReceiveLog() {
+        let logger = Logger()
         let pipe = NSPipe()
-        let localLogger = Logger()
         
-        localLogger.pipe = pipe
-        pipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        logger.pipe = pipe
+        logger.useCurrentThread = true
         
-        localLogger.registerFile(.Error)
+        logger.registerFile(.Fatal)
         
-        // Setup the expectation to wait for the notification
+        let writtenData = "written data".dataUsingEncoding(NSUTF8StringEncoding)!
+        logger.pipe!.fileHandleForWriting.writeData(writtenData)
         
-        let expectation = expectationForNotification(NSFileHandleDataAvailableNotification, object: pipe.fileHandleForReading, handler: { notif -> Bool in
-            // A notification should not be received 
-            // Throw an assertion if the notification is received
-            XCTAssertTrue(true == false)
-            return false
-        })
+        logger.error("This should not be logged")
         
-        // Log some data
-        localLogger.debug("This should not be logged")
-        
-        // Gives 4 seconds for a notification to be received and for the test to fail, and otherwises fulfils it, acknowledging that a notification was not received
-        fulfillAfter(expectation)
-        
-        waitForExpectationsWithTimeout(5, handler: nil)
+        XCTAssertEqual(logger.pipe!.fileHandleForReading.availableData.length, writtenData.length)
     }
     
     func testSettingFileLogLevelReceivesLog() {
