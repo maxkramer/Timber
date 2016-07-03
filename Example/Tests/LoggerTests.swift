@@ -50,16 +50,16 @@ class LoggerTests: XCTestCase {
     func testDisabledLoggerDoesntLog() {
         let logger = Logger()
         let pipe = NSPipe()
-        
+
         logger.pipe = pipe
         logger.enabled = false
         logger.useCurrentThread = true
-        
+
         let writtenData = "written data".dataUsingEncoding(NSUTF8StringEncoding)!
         logger.pipe!.fileHandleForWriting.writeData(writtenData)
-        
+
         logger.debug("Test message")
-        
+
         XCTAssertEqual(logger.pipe!.fileHandleForReading.availableData.length, writtenData.length)
     }
     
