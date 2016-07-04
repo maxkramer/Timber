@@ -5,7 +5,7 @@ XCODE_SCHEME = Timber-Example
 test:
 	set -o pipefail && xcodebuild test -workspace $(XCODE_WORKSPACE) -scheme $(XCODE_SCHEME) -sdk iphonesimulator9.3 | xcpretty        
 codecov:
-	bash <(curl -s https://codecov.io/bash)
+	bash <(curl -s https://codecov.io/bash) -g Example/*
 	# PROJECT_TEMP_ROOT=$(shell xcodebuild -showBuildSettings -workspace $(XCODE_WORKSPACE) -scheme $(XCODE_SCHEME) | grep -m1 PROJECT_TEMP_ROOT | cut -d= -f2 | xargs)
 	# bundle exec slather coverage --verbose -b $(PROJECT_TEMP_ROOT)
 gendocs:
