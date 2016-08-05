@@ -1,0 +1,12 @@
+---
+engines:
+  bundler-audit:
+    enabled: true
+  tailor:
+    enabled: true
+ratings:
+  paths:
+  - Gemfile.lock
+  - Timber/Classes/*.swift
+exclude_paths:
+  - Example
